@@ -157,7 +157,50 @@
                   </code></pre>
 				</section>
 
+                <section data-transition="slide" data-background="#009999" data-background-transition="slide">
+                    <h2>Interlude</h2>
+					<h1>Quelques bonnes pratiques</h1>
+				</section>
 
+				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+                    <h2>Niveau de log</h2>
+                    <h3>Choisir le bon log level n'est pas une option</h3>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+// true story
+logger.debug("Somethin' very bad happened")
+					</code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+                    <h2>Contenu du message</h2>
+                    <ul> 
+                      <li>Donner un maximum de contexte : identifiants, contenu des variables</li> 
+                      <li>Le MDC est là pour automatiser ca</li> 
+                      <li>Eviter les informations sensibles</li>
+                      <li>Eviter les codes d'erreur ésotériques</li>
+                      <li>Ne pas oublier la stacktrace</li>
+					</ul>
+				</section>
+
+				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+                    <h2>Performance</h2>
+                    <ul>
+                      <li>Eviter les logs dans des boucles</li>
+                      <li>Conditionner les logs si construction de message complexe</li>
+					</ul>
+				</section>
+
+				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+                    <h3>Comme tout code, les logs sont à <em>refactorer</em></h3>
+                    <ul>
+                      <li>Après recette en dev</li>
+                      <li>Après passage en prod</li>
+                    </ul>
+				</section>
+
+				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+                    <h3><em>Le développeur est le premier responsable de la qualité des logs</em></h3>
+				</section>
 
 
                 <section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
@@ -544,7 +587,7 @@ stdout { debug => true }
 
                 <section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
 					<h2>Collecte : scribe</h2>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+					<blockquote cite="https://github.com/facebook/scribe/wiki">
 						&ldquo;Scribe is a server for aggregating streaming log data. It is designed to scale to a very large number of nodes and be robust to network and node failures. There is a scribe server running on every node in the system, configured to aggregate messages and send them to a central scribe server (or servers) in larger groups. (...) Scribe is implemented as a thrift service using the non-blocking C++ server&rdquo;
 					</blockquote>
 					<ul>
@@ -555,6 +598,9 @@ stdout { debug => true }
 
 				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
 					<h2>Collecte : flume</h2>
+					<blockquote cite="http://flume.apache.org/">
+					   &ldquo;Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data. It has a simple and flexible architecture based on streaming data flows. It is robust and fault tolerant with tunable reliability mechanisms and many failover and recovery mechanisms. It uses a simple extensible data model that allows for online analytic application.&rdquo;
+					</blockquote>   
 					<ul>
                       <li>Créé chez Cloudera, donné à la fondation Apache</li>
                       <li>Orienté big data</li>
@@ -564,9 +610,14 @@ stdout { debug => true }
 
 				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
 					<h2>Collecte : fluentd</h2>
+                    <blockquote cite="http://docs.fluentd.org/articles/quickstart">
+					  &ldquo;Fluentd is a fully free and fully open-source log collector that instantly enables you to have a ‘Log Everything’ architecture with 125+ types of systems.
+                      Fluentd treats logs as JSON, a popular machine-readable format. It is written primarily in C with a thin-Ruby wrapper that gives users flexibility.&rdquo;
+                    </blockquote>  
 					<ul>
-                      <li>Créé chez ??</li>
+                      <li>Créé chez TreasureData</li>
                       <li>Assez proche de logstash</li>
+                      <li>Beaucoup d'inputs / outputs, peu de filtres</li>
 					</ul>
 				</section>
 
