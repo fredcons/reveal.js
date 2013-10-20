@@ -175,11 +175,36 @@ logger.debug("Somethin' very bad happened")
                     <h2>Contenu du message</h2>
                     <ul> 
                       <li>Donner un maximum de contexte : identifiants, contenu des variables</li> 
-                      <li>Le MDC est là pour automatiser ca</li> 
+                      <li>Le MDC est là pour automatiser ca</li>
+					</ul>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+# filter or interceptor					
+String userId = getUserIdSomehow();
+MDC.put("userId", userId);
+				    </code></pre>
+				    <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+# logback pattern				
+%X{userId}
+				    </code></pre>
+				</section>
+
+				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+                    <h2>Contenu du message</h2>
+                    <ul> 
                       <li>Eviter les informations sensibles</li>
                       <li>Eviter les codes d'erreur ésotériques</li>
+                    </ul>
+                    <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+logger.error("Error 0004");
+				    </code></pre>
+                    <ul>  
                       <li>Ne pas oublier la stacktrace</li>
 					</ul>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+logger.error("Error while doing stuff", e);
+# vs
+logger.error(e);
+				    </code></pre>
 				</section>
 
 				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
@@ -188,6 +213,11 @@ logger.debug("Somethin' very bad happened")
                       <li>Eviter les logs dans des boucles</li>
                       <li>Conditionner les logs si construction de message complexe</li>
 					</ul>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+if (logger.isDebugEnabled()) {
+  logger.debug("Printing {}, {} and {}", value1, value2, value3);
+}
+				    </code></pre>	
 				</section>
 
 				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
@@ -511,6 +541,7 @@ stdout { debug => true }
                       <li>affiche tous les messages</li>
                       <li>permet une recherche multi-critères</li>
                       <li>dispose d'un mécanisme de permissions</li>
+                      <li>permet d'explorer les données avec des requêtes libres</li>
 					</ul>
 				</section>
 
@@ -564,7 +595,7 @@ stdout { debug => true }
 				</section>
 
 				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
-					<h1>(Tentative de démo graylog2)</h1>
+					<h2>(Tentative de démo graylog2)</h2>
 				</section>
 
 				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
@@ -631,7 +662,7 @@ stdout { debug => true }
 				</section>
 
 				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
-					<h1>(Tentative de démo kibana)</h1>
+					<h2>(Tentative de démo kibana)</h2>
 				</section>
 				
 				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
