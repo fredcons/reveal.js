@@ -80,7 +80,8 @@
                                 <section data-transition="slide" data-background="#007777" data-background-transition="slide">
                                   <h2>Ce qu'on attend d'un système de logs</h2>
                                   <ul>
-                                    <li>Normalisation des messages</li>
+                                  	<li>Collecte de messages issus de différentes sources</li> 
+                                    <li>Normalisation des messages issus de ces sources</li>
                                     <li>Accessiblité des messages</li>
                                     <li>Simplification de la recherche d'information</li>
                                   </ul>
@@ -110,7 +111,7 @@
 				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
 					<h2>Au commencement était log4j</h2>
 					<ul>
-						<li>Créé par Ceki Gulcu</li>
+						<li>Créé par Ceki Gülcü</li>
 						<li>Utilisé depuis 1823</li>
 					</ul>
 				</section>	
@@ -136,7 +137,7 @@
 				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
 					<h2>Pour en arriver à slf4j et logback</h2>
 					<ul>
-						<li>Créés par ... Ceki Gulcu</li>
+						<li>Créés par ... Ceki Gülcü</li>
 						<li>slf4j
                           <ul>
                             <li>Successeur de commons-logging</li>
@@ -156,13 +157,19 @@
 					<ul>
 						<li>Plus performant</li>
                         <li>Semble avoir une meilleure gestion de la concurrence</li>
-                        <li>Configuration similaire</li>
-                        <li>Format des messages và la StringFormat</li>
-                        <li>Reload des configurations (moyennement utile)</li>
+                        <li>Configuration similaire à log4j</li>
+                        <li>Format des messages à la StringFormat</li>
+					</ul>
+				</section>
+
+				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+					<h2>Les raisons de choisir logback</h2>
+					<ul>
+						<li>Reload des configurations</li>
                         <li>Modularisation via des includes, des variables...</li>
                         <li>Gestion des conditions (if, else)</li>
                         <li>Gestion de la rotation</li>
-                        <li>Gestion de la compression (moyen)</li>
+                        <li>Gestion de la compression (bof)</li>
 					</ul>
 				</section>
 
@@ -228,7 +235,7 @@ logger.debug("Somethin' very bad happened")
                     <h2>Contenu du message</h2>
                     <ul> 
                       <li>Donner un maximum de contexte : identifiants, contenu des variables</li> 
-                      <li>Le MDC est là pour automatiser ca</li>
+                      <li>Le MDC est là pour automatiser ça</li>
 					</ul>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
 # filter or interceptor					
