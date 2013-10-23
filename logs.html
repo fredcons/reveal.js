@@ -320,7 +320,7 @@ if (logger.isDebugEnabled()) {
 				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
 					<h2>syslog</h2>
 					<ul>
-                      <li>Un protocole créé dans les années 80 pour gérer les logs linux</li>
+                      <li>Un protocole créé dans les années 80 pour gérer les logs sendmail, puis unix</li>
                       <li>Utilisé pour écrire des logs sur disque, mais aussi pour envoyer ces logs à d'autres machines</li>
 					</ul>
 				</section>
@@ -465,9 +465,9 @@ $ActionForwardDefaultTemplate Graylog2Output
 					<h2>logstash</h2>
 					<h3>Un pipeline de traitement d'évènements composé : </h3>
 					<ul>
-                      <li>d'inputs pour récupérer ces évènements (file, syslog, udp, ...)</li>
-                      <li>de filtres et codecs pour les modifier (multiline, grok, mutate)</li>
-                      <li>d'outputs pour les stocker / transférer (graylog, elasticsearch, librato)</li>
+                      <li>d'inputs :<code> file</code>,<code> syslog</code>...</li>
+                      <li>de filtres et codecs :<code> multiline</code>,<code> grok</code>,<code> mutate</code>...</li>
+                      <li>d'outputs :<code> graylog</code>,<code> elasticsearch</code>,<code> librato</code>...</li>
 					</ul>	
 
 					<p><br/><i>Cela donne un système extrêmement souple</i></p>
