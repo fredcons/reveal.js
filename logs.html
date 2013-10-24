@@ -53,7 +53,7 @@
                                 <section data-transition="slide" data-background="#007777" data-background-transition="slide">
                                   <h2>Approche traditionnelle</h2>
                                   <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-&lt;barbu&gt; @all, vous pouvez nettoyer les logs dans ~/tomcat/stuff/logs
+&lt;barbu&gt; @all, vous pouvez nettoyer les logs dans ~/tomcat/stuff/logs ?
 &lt;barbu&gt; on a une critical
 &lt;dev&gt;   hmmk, je regarde
                                   </code></pre>  
@@ -96,19 +96,18 @@
                                 </section>                                  
 
                                 <section data-transition="slide" data-background="#007777" data-background-transition="slide">
-                                  <h2>Mais qu'est qu'une log ?</h2>
+                                  <h2>Mais qu'est-ce qu'une log ?</h2>
                                   <ul>
-                                    <li>Un message émis par l'application (donc par un développeur)</li>
+                                    <li>Un message émis par une application (donc par un développeur)</li>
                                     <li>Qui / Quand / Où / Quoi</li>
-                                    <li>Base commune à tous les systèmes que l'on va voir</li> 
                                   </ul>
                                 </section>
      
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
 					<h1>Logger en java</h1>
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
 					<h2>Au commencement était log4j</h2>
 					<ul>
 						<li>Créé par Ceki Gülcü</li>
@@ -116,7 +115,7 @@
 					</ul>
 				</section>	
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
 					<h2>Puis vinrent...</h2>
 					<ul>
 						<li>jdk-logging
@@ -134,7 +133,7 @@
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
 					<h2>Pour en arriver à slf4j et logback</h2>
 					<ul>
 						<li>Créés par ... Ceki Gülcü</li>
@@ -152,7 +151,7 @@
 					</ul>
 				</section>	
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
 					<h2>Les raisons de choisir slf4j</h2>
 					<ul>
 						<li>Approche "facade"</li>
@@ -168,7 +167,7 @@ jul-to-slf4j # bridge java.util.logging
 					</code></pre>
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
 					<h2>Les raisons de choisir logback</h2>
 					<ul>
 						<li>Plus performant</li>
@@ -178,7 +177,7 @@ jul-to-slf4j # bridge java.util.logging
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
 					<h2>Les raisons de choisir logback</h2>
 					<ul>
 						<li>Reload des configurations</li>
@@ -189,7 +188,7 @@ jul-to-slf4j # bridge java.util.logging
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
 				  <h2>logback : modularisation des configs</h2>	
                   <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;" class="language-xml">
 &lt;included&gt;
@@ -212,7 +211,7 @@ jul-to-slf4j # bridge java.util.logging
                   </code></pre>
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="slide">
+				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
 				  <h2>logback : gestion de conditions</h2>		 
                   <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
 <included>
