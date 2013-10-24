@@ -36,11 +36,11 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-transition="slide" data-background="#007777" data-background-transition="slide">
+				<section data-transition="none" data-background="#007777" data-background-transition="none">
 					<h1>Gestion des logs sur une plateforme web</h1>
 				</section>
 
-				<section data-transition="slide" data-background="#007777" data-background-transition="slide">
+				<section data-transition="none" data-background="#007777" data-background-transition="none">
 					<h2>Au menu</h2>
 					<ul>
 						<li>Les logs , pourquoi faire ?</li>
@@ -50,7 +50,7 @@
 					</ul>
 				</section>
 
-                                <section data-transition="slide" data-background="#007777" data-background-transition="slide">
+                                <section data-transition="none" data-background="#007777" data-background-transition="none">
                                   <h2>Approche traditionnelle</h2>
                                   <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
 &lt;barbu&gt; @all, vous pouvez nettoyer les logs dans ~/tomcat/stuff/logs ?
@@ -59,7 +59,7 @@
                                   </code></pre>  
                                 </section>
 
-                                <section data-transition="slide" data-background="#007777" data-background-transition="slide">
+                                <section data-transition="none" data-background="#007777" data-background-transition="none">
                                   <h2>Pourquoi on parle peu des logs</h2>
                                   <ul>
                                     <li>Pas exactement glamour</li>
@@ -67,7 +67,7 @@
                                   </ul>
                                 </section>
 
-                                <section data-transition="slide" data-background="#007777" data-background-transition="slide">
+                                <section data-transition="none" data-background="#007777" data-background-transition="none">
                                   <h2>Pourquoi il faudrait en parler</h2>
                                   <ul>
                                     <li>Connaissance de l'usage d'une application</li>
@@ -77,7 +77,7 @@
                                   </ul>
                                 </section>
  
-                                <section data-transition="slide" data-background="#007777" data-background-transition="slide">
+                                <section data-transition="none" data-background="#007777" data-background-transition="none">
                                   <h2>Ce qu'on attend d'un système de logs</h2>
                                   <ul>
                                   	<li>Collecte de messages issus de différentes sources</li> 
@@ -87,7 +87,7 @@
                                   </ul>
                                 </section> 
 
-                                <section data-transition="slide" data-background="#007777" data-background-transition="slide">
+                                <section data-transition="none" data-background="#007777" data-background-transition="none">
                                   <h2>Ce qu'on n'attend pas forcément d'un système de logs</h2>
                                   <ul>
                                     <li>Archivage pour raison légales</li>
@@ -95,7 +95,7 @@
                                   </ul>
                                 </section>                                  
 
-                                <section data-transition="slide" data-background="#007777" data-background-transition="slide">
+                                <section data-transition="none" data-background="#007777" data-background-transition="none">
                                   <h2>Mais qu'est-ce qu'une log ?</h2>
                                   <ul>
                                     <li>Un message émis par une application (donc par un développeur)</li>
@@ -103,11 +103,11 @@
                                   </ul>
                                 </section>
      
-				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
+				<section data-transition="none" data-background="#bf3030" data-background-transition="none">
 					<h1>Logger en java</h1>
 				</section>
 
-				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
+				<section data-transition="none" data-background="#bf3030" data-background-transition="none">
 					<h2>Au commencement était log4j</h2>
 					<ul>
 						<li>Créé par Ceki Gülcü</li>
@@ -115,7 +115,7 @@
 					</ul>
 				</section>	
 
-				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
+				<section data-transition="none" data-background="#bf3030" data-background-transition="none">
 					<h2>Puis vinrent...</h2>
 					<ul>
 						<li>jdk-logging
@@ -133,7 +133,7 @@
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
+				<section data-transition="none" data-background="#bf3030" data-background-transition="none">
 					<h2>Pour en arriver à slf4j et logback</h2>
 					<ul>
 						<li>Créés par ... Ceki Gülcü</li>
@@ -151,7 +151,7 @@
 					</ul>
 				</section>	
 
-				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
+				<section data-transition="none" data-background="#bf3030" data-background-transition="none">
 					<h2>Les raisons de choisir slf4j</h2>
 					<ul>
 						<li>Approche "facade"</li>
@@ -167,7 +167,7 @@ jul-to-slf4j # bridge java.util.logging
 					</code></pre>
 				</section>
 
-				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
+				<section data-transition="none" data-background="#bf3030" data-background-transition="none">
 					<h2>Les raisons de choisir logback</h2>
 					<ul>
 						<li>Plus performant</li>
@@ -177,7 +177,7 @@ jul-to-slf4j # bridge java.util.logging
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
+				<section data-transition="none" data-background="#bf3030" data-background-transition="none">
 					<h2>Les raisons de choisir logback</h2>
 					<ul>
 						<li>Reload des configurations</li>
@@ -188,7 +188,7 @@ jul-to-slf4j # bridge java.util.logging
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
+				<section data-transition="none" data-background="#bf3030" data-background-transition="none">
 				  <h2>logback : modularisation des configs</h2>	
                   <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;" class="language-xml">
 &lt;included&gt;
@@ -211,7 +211,7 @@ jul-to-slf4j # bridge java.util.logging
                   </code></pre>
 				</section>
 
-				<section data-transition="slide" data-background="#bf3030" data-background-transition="slide">
+				<section data-transition="none" data-background="#bf3030" data-background-transition="none">
 				  <h2>logback : gestion de conditions</h2>		 
                   <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
 <included>
@@ -232,12 +232,12 @@ jul-to-slf4j # bridge java.util.logging
                   </code></pre>
 				</section>
 
-                <section data-transition="slide" data-background="#009999" data-background-transition="slide">
+                <section data-transition="none" data-background="#009999" data-background-transition="none">
                     <h3>Interlude</h3>
 					<h2>Quelques bonnes pratiques</h2>
 				</section>
 
-				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+				<section data-transition="none" data-background="#009999" data-background-transition="none">
                     <h2>Niveau de log</h2>
                     <h3>Choisir le bon log level n'est pas une option</h3>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -246,7 +246,7 @@ logger.debug("Somethin' very bad happened")
 					</code></pre>
 				</section>
 
-				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+				<section data-transition="none" data-background="#009999" data-background-transition="none">
                     <h2>Contenu du message</h2>
                     <ul> 
                       <li>Donner un maximum de contexte : identifiants, contenu des variables</li> 
@@ -263,7 +263,7 @@ MDC.put("userId", userId);
 				    </code></pre>
 				</section>
 
-				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+				<section data-transition="none" data-background="#009999" data-background-transition="none">
                     <h2>Contenu du message</h2>
                     <ul> 
                       <li>Eviter les informations sensibles</li>
@@ -282,7 +282,7 @@ logger.error(e);
 				    </code></pre>
 				</section>
 
-				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+				<section data-transition="none" data-background="#009999" data-background-transition="none">
                     <h2>Performance</h2>
                     <ul>
                       <li>Eviter les logs dans des boucles</li>
@@ -295,7 +295,7 @@ if (logger.isDebugEnabled()) {
 				    </code></pre>	
 				</section>
 
-				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+				<section data-transition="none" data-background="#009999" data-background-transition="none">
                     <h3>Comme tout code, les logs sont à <em>refactorer</em></h3>
                     <ul>
                       <li>Après recette en dev</li>
@@ -303,12 +303,12 @@ if (logger.isDebugEnabled()) {
                     </ul>
 				</section>
 
-				<section data-transition="slide" data-background="#009999" data-background-transition="slide">
+				<section data-transition="none" data-background="#009999" data-background-transition="none">
                     <h3><em>Le développeur est le premier responsable de la qualité des logs</em></h3>
 				</section>
 
 
-                <section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+                <section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h1>Les logs système</h1>
 					<ul>
                       <li>Messages système avec syslog</li>
@@ -316,7 +316,7 @@ if (logger.isDebugEnabled()) {
 					</ul>	
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>syslog</h2>
 					<ul>
                       <li>Un protocole créé dans les années 80 pour gérer les logs sendmail, puis unix</li>
@@ -324,7 +324,7 @@ if (logger.isDebugEnabled()) {
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>Les composantes d'un message syslog</h2>
 					<ul>
                       <li>Timestamp</li>
@@ -339,14 +339,14 @@ if (logger.isDebugEnabled()) {
 					<p><br /><i>Limité à de l'ASCII sur 1024 bytes</i></p>
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 				  <h3>Exemple de message syslog</h3>	
 				  <code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
                     &lt;78&gt; CRON Oct 4 14:17:01 support-digi-dev2 13809 - - (root) CMD ( cd / && run-parts --report /etc/cron.hourly)  
 				  </code>	
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>syslog and friends</h2>
 					<ul>
                       <li>Les limitations du syslog originel ont donné lieu à des implémentations concurrentes</li>
@@ -355,7 +355,7 @@ if (logger.isDebugEnabled()) {
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>Exemple de configuration rsyslog</h2>
 					<p><code>/etc/rsyslog.conf</code></p>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -373,7 +373,7 @@ $IncludeConfig /etc/rsyslog.d/*.conf
 					</code></pre>	
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>Exemple de configuration rsyslog</h2>
 					<p><code>/etc/rsyslog.d/50-default.conf</code></p>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -391,21 +391,21 @@ mail.*                          -/var/log/mail.log
 					</code></pre>	
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>Exemple de configuration rsyslog</h2>
 					<p><code>/etc/rsyslog.d/99-graylog2.conf</code></p>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-$template Graylog2Output,"<%PRI%> %APP-NAME% %TIMESTAMP% %HOSTNAME% %PROCID% %MSGID% %STRUCTURED-DATA% %msg%\n"
-$ActionForwardDefaultTemplate Graylog2Output
-*.* @log-collector.mydomain.local:514
+$template Graylog2Output,"<%PRI%> %APP-NAME% %TIMESTAMP% %HOSTNAME% 
+%PROCID% %MSGID% %STRUCTURED-DATA% %msg%\n"
+$ActionForwardDefaultTemplate Graylog2Output *.* @log-collector.mydomain.local:514
 					</code></pre>	
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>logrotate</h2>
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>Objectifs de logrotate</h2>
 					<ul>
                       <li>Ne pas laisser les logs devenir trop volumineuses</li>
@@ -413,7 +413,7 @@ $ActionForwardDefaultTemplate Graylog2Output
 					</ul>	
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>Principe de logrotate</h2>
 					<ul>
                       <li>Le script <code>/etc/cron.daily/logrotate</code> est exécuté tous les jours</li>
@@ -421,7 +421,7 @@ $ActionForwardDefaultTemplate Graylog2Output
 					</ul>	
 				</section>
 
-				<section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+				<section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>Exemple de configuration</h2>
 					<p><code>/etc/logrotate.d/apache2</code></p>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -444,7 +444,7 @@ $ActionForwardDefaultTemplate Graylog2Output
 					</code></pre>	
 				</section>
 
-                <section data-transition="slide" data-background="#8c4738" data-background-transition="slide">
+                <section data-transition="none" data-background="#8c4738" data-background-transition="none">
 					<h2>Limites de logrotate</h2>
 					<ul>
                       <li>Système de datation pas très souple</li>
@@ -452,7 +452,7 @@ $ActionForwardDefaultTemplate Graylog2Output
 					</ul>	
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h1>La centralisation des logs</h1>
 					<ul>
                       <li>Récolter / transformer : logstash</li>
@@ -460,7 +460,7 @@ $ActionForwardDefaultTemplate Graylog2Output
 					</ul>	
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>logstash</h2>
 					<h3>Un pipeline de traitement d'évènements composé : </h3>
 					<ul>
@@ -472,7 +472,7 @@ $ActionForwardDefaultTemplate Graylog2Output
 					<p><br/><i>Cela donne un système extrêmement souple</i></p>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>logstash : exemple d'input</h2>
 					<p>Tail d'un fichier sur disque</p>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -486,7 +486,7 @@ file {
 					</code></pre>	
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>logstash : exemple de filtre</h2>
 					<p>Structuration d'un message avec <code>grok</code></p>
                     <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -500,13 +500,16 @@ file {
 					</code></pre>
                     <p>Définition d'une pattern</p>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-APACHE_ACCESS_PATTERN %{CLOSE_BRACKET}%{PIPE}%{HOST:current_server}%{PIPE}%{INT:port}%{PIPE}%{WORD:verb} %{EXTENDEDURIPATHPARAM_OR_STAR:request} 
-HTTP/%{NUMBER:httpversion}%{PIPE}%{DASH_OR_NUMBER:response}%{PIPE}%{DASH_OR_NUMBER:bytes}%{PIPE}%{DASH_OR_NUMBER:request_time}
-%{PIPE}%{DASH_OR_NUMBER:total_request_time}%{PIPE}%{DASH_OR_WORD:phpSessionId}%{PIPE}%{DASH_OR_WORD:pid}%{PIPE}%{UNIQUE_ID:uniqueId}
+APACHE_ACCESS_PATTERN %{CLOSE_BRACKET}%{PIPE}%{HOST:current_server}%{PIPE}
+%{INT:port}%{PIPE}%{WORD:verb} %{EXTENDEDURIPATHPARAM_OR_STAR:request}
+HTTP/%{NUMBER:httpversion}%{PIPE}%{DASH_OR_NUMBER:response}%{PIPE}
+%{DASH_OR_NUMBER:bytes}%{PIPE}%{DASH_OR_NUMBER:request_time}
+%{PIPE}%{DASH_OR_NUMBER:total_request_time}%{PIPE}%{DASH_OR_WORD:phpSessionId}
+%{PIPE}%{DASH_OR_WORD:pid}%{PIPE}%{UNIQUE_ID:uniqueId}
 					</code></pre>	
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>logstash : exemple de filtre</h2>
 					<p>Suppression d'un message avec <code>grep</code></p>
                     <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -518,7 +521,7 @@ grep {
 					</code></pre>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>logstash : exemple de filtre</h2>
 					<p>Modification d'un message avec <code>mutate</code></p>
                     <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;" class="language-json">
@@ -533,7 +536,7 @@ mutate {
 					</code></pre>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>logstash : exemple de filtre</h2>
 					<p>Recomposition d'une stacktrace avec <code>multiline</code></p>
                     <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -546,7 +549,7 @@ mutate {
 				</section>
 
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>logstash : exemple d'output</h2>
 					<p>Envoi des logs vers graylog2 et vers la console</p>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -560,7 +563,7 @@ stdout { debug => true }
 					</code></pre>	
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>logstash : les limites</h2>
 					<ul>
                       <li>Refactoring fréquents, donc upgrades douloureux</li>
@@ -569,7 +572,7 @@ stdout { debug => true }
 				</section>
 
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>graylog2</h2>
 					<h3>Un système en deux parties</h3>
 					<ul>
@@ -581,7 +584,7 @@ stdout { debug => true }
 					<p><br/>(attention gros changements à venir)</p>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>Le format GELF</h2>
 					<h3>Une version enrichie et souple du format syslog</h3>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
@@ -601,7 +604,7 @@ stdout { debug => true }
 					</code></pre>	
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>graylog2-server</h2>
 					<h3>Un agent java qui :</h3>
 					<ul>
@@ -610,7 +613,7 @@ stdout { debug => true }
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>graylog2-web</h2>
 					<h3>Une webapp qui :</h3>
 					<ul>
@@ -621,7 +624,7 @@ stdout { debug => true }
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>Vu de haut ca donne</h2>
 					<img width="537" height="480" src="./assets/graylog2-overview.png" alt="Graylog2 vu de haut">
                     <p>
@@ -629,17 +632,17 @@ stdout { debug => true }
 					</p>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>graylog2-web : liste des messages</h2>
 					<img width="679" height="576" src="./assets/graylog2-list-small.png" alt="Graylog2 : liste des messages">
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>graylog2-web : détail d'un message</h2>
 					<img width="648" height="638" src="./assets/graylog2-message-detail.png" alt="Graylog2 : détail d'un message">
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>graylog2-web : configuration logback</h2>
 					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
 <appender name="GELF" class="me.moocar.logbackgelf.GelfAppender">
@@ -660,7 +663,7 @@ stdout { debug => true }
 					</code></pre>	
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>graylog2-web : les limites</h2>
 					<ul>
                       <li>Peu de problèmes applicatifs mais...</li>
@@ -670,11 +673,57 @@ stdout { debug => true }
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
+					<h2>Exemple d'application : suivi d'une requête</h2>
+					<ul>
+                      <li>On veut pouvoir suivre une requête dans tous les système de l'application</li>
+                      <li>On va donc générer un identifiant unique pour cette requête, et le faire passer de couche en couche</li>
+					</ul>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+RequestHeader set UNIQUE_ID %{UNIQUE_ID}e        
+					</code></pre>	
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+172.23.101.120|172.24.0.111|[24/Oct/2013:09:05:20 +0200]|
+secure.digiposte.local|443|GET /js/routing?callback=fos.Router.setData 
+HTTP/1.1|200|511|13467|13467|3h3buqge9hs3i7b9bvvgvebot1|
+25378|UmjGsKwYZWQAABI9RtcAAAAV    
+					</code></pre>	
+
+				</section>
+				
+                <section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
+					<h2>Exemple d'application : suivi d'une requête</h2>
+                    <ul>
+                      <li>Coté applicatif java, il faut pouvoir recevoir cet id sous forme de header http, ou ampq</li>
+                    </ul>
+                    <pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+// AMQP
+MDC.put("UNIQUE_ID", message.getHeaders().get("UNIQUE_ID", String.class));     
+// ou
+// HTTP
+MDC.put(MDC_UNIQUE, request.getHeader("UNIQUE_ID"));
+					</code></pre>	
+                    <ul>  
+                      <li>Mais aussi le faire passer sous forme de header</li>
+					</ul>
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+MessageProperties properties = new MessageProperties();
+properties.setHeader("UNIQUE_ID", MDC.get("UNIQUE_ID"));       
+					</code></pre>	
+					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
+digiposte-batch-indexer 24/10/2013-10:38:54.024 [32041] [u5dkkmk2s51vs12vhr3r02juo5]
+[f2673dd7bfd7f8a398e550f3bdee2133] [UmjcnawYZWQAAHApDeIAAAAu] 
+[6d516a02f78c40b892eb94277a3ca107] [SimpleAsyncTaskExecutor-1] INFO 
+com.digiposte.batch.core.job launcher.NewRelicTracingJobLauncherDecorator:51 - 
+Appending to NewRelic transaction the parameter = 32041
+</code></pre>	
+				</section>	
+
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>(Tentative de démo graylog2)</h2>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>Centralisation des logs : les autres options</h2>
 					<ul>
 					  <li>SAAS</li>	 
@@ -683,7 +732,7 @@ stdout { debug => true }
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>SAAS : les acteurs</h2>
 					<ul>
                       <li>Splunk</li>
@@ -692,18 +741,7 @@ stdout { debug => true }
 					</ul>
 				</section>
 
-                <section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
-					<h2>Collecte : scribe</h2>
-					<blockquote cite="https://github.com/facebook/scribe/wiki">
-						&ldquo;Scribe is a server for aggregating streaming log data. It is designed to scale to a very large number of nodes and be robust to network and node failures. There is a scribe server running on every node in the system, configured to aggregate messages and send them to a central scribe server (or servers) in larger groups. (...) Scribe is implemented as a thrift service using the non-blocking C++ server&rdquo;
-					</blockquote>
-					<ul>
-                      <li>Créé chez Facebook, donc très orienté bigdata</li>
-                      <li>Assez peu utilisé par ailleurs</li>
-					</ul>
-				</section>
-
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>Collecte : flume</h2>
 					<blockquote cite="http://flume.apache.org/">
 					   &ldquo;Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data. It has a simple and flexible architecture based on streaming data flows. It is robust and fault tolerant with tunable reliability mechanisms and many failover and recovery mechanisms. It uses a simple extensible data model that allows for online analytic application.&rdquo;
@@ -715,7 +753,7 @@ stdout { debug => true }
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>Collecte : fluentd</h2>
                     <blockquote cite="http://docs.fluentd.org/articles/quickstart">
 					  &ldquo;Fluentd is a fully free and fully open-source log collector that instantly enables you to have a ‘Log Everything’ architecture with 125+ types of systems.
@@ -728,7 +766,7 @@ stdout { debug => true }
 					</ul>
 				</section>
 
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+				<section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>Visualisation : kibana</h2>
 					<ul>
                       <li>Projet indépendant, passé depuis sous l'ombrelle elasticsearch</li>
@@ -736,17 +774,18 @@ stdout { debug => true }
                       <li>Une option à suivre, malgré quelques lacunes de sécurité</li>
 					</ul>
 				</section>
-				
-				<section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+	
+
+				<!--section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>Liens en vrac</h2>
 					<ul>
                       <li><a href="http://www.masterzen.fr/2013/01/13/the-10-commandments-of-logging/">Ten commandments of logging</li>
                       <li><a href="http://blog.sematext.com/2013/05/28/structured-logging-with-rsyslog-and-elasticsearch/">rsyslog et Elasticsearch</a></li>
                       <li><a href="http://www.touilleur-express.fr/2013/10/08/fluentd/">Java et fluentd</a></li>                      
                     </ul>
-				</section>
+				</section-->
 
-                <section data-transition="slide" data-background="#3D9AD1" data-background-transition="slide">
+                <section data-transition="none" data-background="#3D9AD1" data-background-transition="none">
 					<h2>Questions ? </h2>
 				</section>
 
